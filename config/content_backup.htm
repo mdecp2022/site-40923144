@@ -300,7 +300,26 @@ doc["threejsblock"].bind("click", threejsblock.do)
 <script src="https://unpkg.com/three@0.144.0/build/three.js" type="text/javascript"></script>
 <h1>HW</h1>
 <h2>W5</h2>
-<p><a href="https://40923144.github.io/site-40923144/content/Brython.html?src=https://gist.githubusercontent.com/40923144/45550faffd2a43e2ca457ab4905e9bc7/raw/d55bcf6217abe0174ca61ffc4c1d382ec523f203/W5_HW">password generator</a></p><h2>W12</h2>
+<p><a href="https://40923144.github.io/site-40923144/content/Brython.html?src=https://gist.githubusercontent.com/40923144/45550faffd2a43e2ca457ab4905e9bc7/raw/d55bcf6217abe0174ca61ffc4c1d382ec523f203/W5_HW">password generator</a></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># 導入亂數模組
+import random
+# 導入字串模組
+import string
+# 利用 def 關鍵字定義函式
+# 函式的輸入變數可以設定初始值
+def password_generator(size=4, chars=string.ascii_lowercase + string.digits):
+    # 函式內以多行註解說明函式功能
+    """Generate random password
+    """
+    # 利用 return 關鍵字將所產生的亂數字串傳回
+    return ''.join(random.choice(chars) for _ in range(size))
+# 建立一個變數與隨後的字串對應
+pass_string = "abcdefghkmnpqrstuwxyz123456789"
+# 利用重複迴圈呼叫 password_generator() 函式 10 次
+for i in range(10):
+    print(password_generator(4, pass_string))</pre>
+<h2>W11</h2>
+<h2>W12</h2>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># Brython 的 input() 可以接受輸入提示字串, 跳出瀏覽器輸入表單後, 將輸入內容以字串取回
 user_input_temp = input("請輸入攝氏溫度值:")
 # 接著列出 user_input_temp 變數的資料型別
