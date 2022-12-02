@@ -2,7 +2,7 @@
         <head>
         <title>cmsite</title>
         <meta charset="utf-8">
-<meta property="head" content="H1">
+<meta property="head" content="H2">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -111,7 +111,6 @@ img.add_border {
               <div class="container">
                 <div class="row align-items-center">
                 <h1>40923144</h1>
-=======
                 <div class="pl-4">
                     <form>
                     <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
@@ -119,7 +118,6 @@ img.add_border {
                 </div>
                   <!-- <div class="col-11 col-xl-2">
                     <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923144</a></h1> 
-=======
                   </div>
                   -->
                   <div class="col-12 col-md-10 d-none d-xl-block">
@@ -133,7 +131,6 @@ img.add_border {
                         </ul>
                       </li>
                      <li><a href='About.html'>About</a><li class='has-children'><a href='NOTE.html'>NOTE</a><ul class='dropdown'><li><a href='建立cp2022倉儲.html'>建立cp2022倉儲</a></li></ul><li><a href='cp2022.html'>cp2022</a><li class='has-children'><a href='HW.html'>HW</a><ul class='dropdown'><li><a href='W5.html'>W5</a><li><a href='W11.html'>W11</a><li><a href='W12.html'>W12</a></li></ul><li><a href='Brython.html'>Brython</a></li>
-=======
                       </ul>
                 </nav>
               </div>
@@ -144,10 +141,26 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content"> <a href='NOTE.html'>Next</a> >> NOTE<br /><h1>About</h1>
-<p>github:<a href="https://github.com/40923144/site-40923144">https://github.com/40923144/site-40923144</a></p>
-<br /> <a href='NOTE.html'>Next</a> >> NOTE</div>
-=======
+    <div id="tipue_search_content">HW << <a href='HW.html'>Previous</a> <a href='W11.html'>Next</a> >> W11<br /><h1>W5</h1>
+<p><a href="https://40923144.github.io/site-40923144/content/Brython.html?src=https://gist.githubusercontent.com/40923144/45550faffd2a43e2ca457ab4905e9bc7/raw/d55bcf6217abe0174ca61ffc4c1d382ec523f203/W5_HW">password generator</a></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># 導入亂數模組
+import random
+# 導入字串模組
+import string
+# 利用 def 關鍵字定義函式
+# 函式的輸入變數可以設定初始值
+def password_generator(size=4, chars=string.ascii_lowercase + string.digits):
+    # 函式內以多行註解說明函式功能
+    """Generate random password
+    """
+    # 利用 return 關鍵字將所產生的亂數字串傳回
+    return ''.join(random.choice(chars) for _ in range(size))
+# 建立一個變數與隨後的字串對應
+pass_string = "abcdefghkmnpqrstuwxyz123456789"
+# 利用重複迴圈呼叫 password_generator() 函式 10 次
+for i in range(10):
+    print(password_generator(4, pass_string))</pre>
+<br />HW << <a href='HW.html'>Previous</a> <a href='W11.html'>Next</a> >> W11</div>
         
     <!-- footer -->
       <div class="container">
