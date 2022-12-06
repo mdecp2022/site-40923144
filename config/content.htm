@@ -318,7 +318,32 @@ pass_string = "abcdefghkmnpqrstuwxyz123456789"
 # 利用重複迴圈呼叫 password_generator() 函式 10 次
 for i in range(10):
     print(password_generator(4, pass_string))</pre>
-<h2>W11</h2>
+<h2>W6</h2>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from browser import document, html
+ 
+brython_div1 = document["brython_div1"]
+"""
+brython_div1 &lt;= html.BUTTON("hello")
+brython_div1 &lt;= html.BR()
+brython_div1 &lt;= html.A("google", href="https://google.com")
+"""
+ 
+url = "https://mde.tw/studlist/2022fall/1a.txt"
+data = open(url).read().split("\n")
+mdecp2022 = "https://mdecp2022.github.io/site-"
+data = data[1:-1]
+for i in data:
+    stud = i.split("\t")
+    stud_num = stud[0]
+    github_acc = stud[1]
+    #print(stud_num, github_acc)
+    if github_acc == "":
+        github_acc = stud_num
+    site = mdecp2022 + github_acc
+    link = html.A(stud_num, href=site)
+    brython_div1 &lt;= link
+    brython_div1 &lt;= html.BR()</pre>
+<p><a href="https://mdecp2022.github.io/site-40923144/content/Brython.html?src=https://gist.githubusercontent.com/40923144/5564d66fd0f390435dbfecfb2ab75cd7/raw/b73a4e84af63b60189d32fa9fabbb6208cf374ab/W6_HW.py">1a 名單</a></p><h2>W11</h2>
 <div>
 <div>已知 <a href="https://gist.githubusercontent.com/mdecycu/9df4b372ac1b7386cf259ced15f1a2b2/raw/8e59f90d8ff4f1ad4fecd4f7ee159f91eb6addf9/cp1b_w11_quiz_result.json" rel="noreferrer noopener" tabindex="-1" target="_blank" title="https://gist.githubusercontent.com/mdecycu/9df4b372ac1b7386cf259ced15f1a2b2/raw/8e59f90d8ff4f1ad4fecd4f7ee159f91eb6addf9/cp1b_w11_quiz_result.json">w11 cp1b 小考結果 JSON 檔案</a>, 請在個人網站中新增一個 H1 格式, 標題為 HW 的網站, 將各週作業內容、心得與討論, 以小寫的 w10, w11 (格式為 H2) 作為標題放入.</div>
 <div>w11 作業:</div>
@@ -435,7 +460,8 @@ def get_input(env):
 document["btn1"].bind('click', get_input)
 // ]]&gt;&lt;/script&gt;</pre>
 <p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
-<p><a href="https://mdecp2022.github.io/site-40923144/content/Brython.html?src=https://gist.githubusercontent.com/40923144/9cf07fe2de558e3ff6c6f1470a62b72a/raw/e7cd34c8c0e2e958181f0b55f8b6923daae42600/w12_HW-test3.py">Ex.3</a></p><h1>Brython</h1>
+<p><a href="https://mdecp2022.github.io/site-40923144/content/Brython.html?src=https://gist.githubusercontent.com/40923144/9cf07fe2de558e3ff6c6f1470a62b72a/raw/e7cd34c8c0e2e958181f0b55f8b6923daae42600/w12_HW-test3.py">Ex.3</a></p>
+<h1>Brython</h1>
 <p><a href="https://gist.githubusercontent.com/40923144/9cf07fe2de558e3ff6c6f1470a62b72a/raw/e7cd34c8c0e2e958181f0b55f8b6923daae42600/w12_HW-test3.py">Ex.3</a></p>
 <p></p>
 <p><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">https://en.wikipedia.org/wiki/Python_(programming_language)</a></p>
