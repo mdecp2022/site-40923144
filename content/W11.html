@@ -149,19 +149,19 @@ img.add_border {
 <li>請問 w11 週小考有幾人缺考?</li>
 <li>請問 w11 週小考平均分數多少?</li>
 </ol>
-<p><a href="https://40923144.github.io/site-40923144/content/Brython.html?src=https://gist.githubusercontent.com/40923144/212c9f1232a94fd99f1bf674a54695fb/raw/4093f497b66e576370b8a1c9475c3568bff10e40/W11_HW">W11</a></p>
+<p><a href="https://mdecp2022.github.io/site-40923144/content/Brython.html?src=https://gist.githubusercontent.com/40923144/212c9f1232a94fd99f1bf674a54695fb/raw/f09be46164290d0c5c6067db82fe3e509020f896/W11_HW">W11</a></p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import ast
 # get stud_list first
 def get_stud(c_name):
     courses = {"1a": "0747", "1b": "0761", "2a": "0773", "2b": "0786"}
-    #c_name = "1b"
+    #c_name = "1a"
     c = courses[c_name]
     url = "https://nfu.cycu.org/?semester=1111&amp;courseno=" + c + "&amp;column=True"
     data = open(url).read().split("\n")
     stud = data[:-1]
     return stud
      
-cp_stud = get_stud("1b")
+cp_stud = get_stud("1a")
 # get w10 quiz result
 cp_w11_quiz_url = "https://gist.githubusercontent.com/mdecycu/9df4b372ac1b7386cf259ced15f1a2b2/raw/8e59f90d8ff4f1ad4fecd4f7ee159f91eb6addf9/cp1b_w11_quiz_result.json"
 cp_w10_quiz_url = "https://gist.githubusercontent.com/mdecycu/9df4b372ac1b7386cf259ced15f1a2b2/raw/a6825f13b1bb0b61e09e74dd117729eefe1d947f/20221110_cp1b_w10_quiz.json"
@@ -197,8 +197,7 @@ print("以下為 w10 缺考名單:")
 for stud in cp_abs:
     print(stud)</pre>
 <p></p>
-</div>
-<br />W6 << <a href='W6.html'>Previous</a> <a href='W12.html'>Next</a> >> W12</div>
+</div><br />W6 << <a href='W6.html'>Previous</a> <a href='W12.html'>Next</a> >> W12</div>
         
     <!-- footer -->
       <div class="container">
