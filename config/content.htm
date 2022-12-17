@@ -468,7 +468,7 @@ document["btn1"].bind('click', get_input)
 <p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
 <p><a href="https://mdecp2022.github.io/site-40923144/content/Brython.html?src=https://gist.githubusercontent.com/40923144/9cf07fe2de558e3ff6c6f1470a62b72a/raw/e7cd34c8c0e2e958181f0b55f8b6923daae42600/w12_HW-test3.py">Ex.3</a></p>
 <h2>W13</h2>
-<p><a href="https://mdecp2022.github.io/site-40923144/content/Brython.html?src=https://gist.githubusercontent.com/40923144/c3565560360a02f4d8b5c2b4ca1edf0b/raw/ae190a345afafe75f8fb74e92f1f6cb49116812f/W13">temperature</a></p>
+<p><a href="https://mdecp2022.github.io/site-40923144/content/Brython.html?src=https://gist.githubusercontent.com/40923144/c3565560360a02f4d8b5c2b4ca1edf0b/raw/ae190a345afafe75f8fb74e92f1f6cb49116812f/W13">temperature-1</a></p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">'''
 f=c*9/5+32
 c=(f-32)*5/9
@@ -476,10 +476,23 @@ c=(f-32)*5/9
 c=input("請輸入攝氏溫度值")
 print(c,type(c))</pre>
 <p></p>
+<p></p>
+<p><a href="https://mdecp2022.github.io/site-40923144/content/Brython.html?src=https://gist.githubusercontent.com/40923144/9b0780468e8b33fc2ffaccb17e33b913/raw/6e354f887cc8cc36e4f3310d442b6bdc62a76726/W13_hw.py">temperature-2</a></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">'''
+f = c*9/5 + 32
+c = (f-32)*5/9
+'''
+c = input("請輸入攝氏溫度值")
+#print(type(c))
+c = float(c)
+print("請輸入攝氏溫度: " +str(c), "等於華氏溫度: " + str(c*9/5 +32))</pre>
 <p>這是將<strong>攝氏溫度</strong>轉換成<strong>華氏溫度</strong>的程式。</p>
-<p>點<strong>temperature</strong>連結，當出現以下的對話框時，就可以輸入數值將攝氏溫度轉換成華氏溫度。</p>
-<p><img alt="" height="387" src="/images/1210-1.png" width="500"/></p>
-<h2>W14</h2>
+<p>點<strong>temperature-2</strong>連結，當出現以下的對話框時，就可以輸入數值將攝氏溫度轉換成華氏溫度。</p>
+<p><img alt="" height="281" src="/images/1217-1.png" width="500"/></p>
+<p>當輸入攝氏溫度為30度時,顯示出的結果是華氏溫度86度</p>
+<p><img alt="" height="281" src="/images/1217-2.png" width="500"/></p>
+<p></p>
+<p></p><h2>W14</h2>
 <p><a href="https://mdecp2022.github.io/site-40923144/content/Brython.html?src=https://gist.githubusercontent.com/40923144/db18985c99e63d0c699d4c391d982bf9/raw/f93c98df0a4b7884284f03023594e3fbed29a366/W14_HW.py">w14考試成績</a></p>
 <p>名單是從<strong>最低分</strong>至<strong>最高分</strong>排序</p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># 導入 ast 模組是希望利用其 literal_eval() 將 dict 格式的字串轉為 dict 資料型別
